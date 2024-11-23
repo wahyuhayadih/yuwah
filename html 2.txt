@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uji Kandungan Bahan Makanan</title>
+    <style>
+        /* Gaya Umum */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            color: #ffd700;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #ffd700;
+        }
+
+        p, ol, ul {
+            margin: 10px 0;
+            line-height: 1.8;
+            color: #e3e3e3;
+        }
+
+        ol, ul {
+            padding-left: 40px;
+        }
+
+        /* Tabel */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #fff;
+        }
+
+        table th {
+            background-color: #333;
+            color: #ffd700;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            color: #fff;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Animasi Scroll */
+        .content, table {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .content.visible, table.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Uji Kandungan Bahan Makanan</h1>
+    </header>
+    <section>
+        <div class="content">
+            <h2>Tujuan</h2>
+            <p>Agar mengetahui kandungan bahan makanan.</p>
+        </div>
+        <div class="content">
+            <h2>Alat dan Bahan</h2>
+            <p>Roti, sosis, tabung reaksi, H<sub>2</sub>O, pipet, NaOH, CuSO<sub>4</sub>, Fehling A dan B, Lugol, alu, mortar, erlenmeyer, alat pembakar, pengaduk, dan mangga.</p>
+        </div>
+        <div class="content">
+            <h2>Cara Kerja</h2>
+            <ol>
+                <li>Siapkan alat dan bahan.</li>
+                <li>Haluskan sosis, roti, dan mangga di tempat yang berbeda.</li>
+                <li>Sambil menghaluskan, tambahkan air hingga dapat disaring.</li>
+                <li>Lalu saring.</li>
+                <li>Pindahkan hasil saringan ke 3 tabung reaksi berbeda.</li>
+                <li>Pada tabung pertama, teteskan Lugol sebanyak 5-10 tetes.</li>
+                <li>Pada tabung kedua, teteskan NaOH dan CuSO<sub>4</sub> masing-masing sebanyak 5-10 tetes.</li>
+                <li>Pada tabung ketiga, teteskan Fehling A dan B masing-masing 5-10 tetes, kemudian panaskan hingga mendidih.</li>
+                <li>Untuk mangga, tambahkan air 50 mL di erlenmeyer.</li>
+                <li>Teteskan ekstrak mangga minimal 10 tetes, dan tambahkan betadine hingga menguning.</li>
+                <li>Amati hasilnya.</li>
+            </ol>
+        </div>
+        <div class="content">
+            <h2>Hasil Pengujian</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bahan</th>
+                        <th>Nama Uji</th>
+                        <th>Reagen</th>
+                        <th>Hasil Roti</th>
+                        <th>Hasil Sosis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Roti</td>
+                        <td>Amilum</td>
+                        <td>Lugol (5-10 tetes)</td>
+                        <td>Hitam</td>
+                        <td>Hitam</td>
+                    </tr>
+                    <tr>
+                        <td>Roti</td>
+                        <td>Protein</td>
+                        <td>CuSO<sub>4</sub> + NaOH (5-10 tetes)</td>
+                        <td>Hijau Tosca</td>
+                        <td>Cincin Ungu</td>
+                    </tr>
+                    <tr>
+                        <td>Roti</td>
+                        <td>Glukosa</td>
+                        <td>Fehling A + B (5-10 tetes)</td>
+                        <td>Kuning Lunak</td>
+                        <td>Coklat Abu-Abu</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="content">
+            <h2>Kesimpulan</h2>
+            <p>Kami dapat mengetahui bahwa kandungan bahan makanan bisa diuji menggunakan senyawa tertentu seperti:</p>
+            <ul>
+                <li>Amilum menggunakan Lugol.</li>
+                <li>Protein menggunakan CuSO<sub>4</sub> + NaOH.</li>
+                <li>Glukosa menggunakan Fehling A + B.</li>
+                <li>Vitamin C menggunakan betadine.</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Praktikum Kimia Makanan</p>
+    </footer>
+    <script>
+        // Animasi scroll
+        const contents = document.querySelectorAll('.content, table');
+        window.addEventListener('scroll', () => {
+            contents.forEach(content => {
+                const position = content.getBoundingClientRect().top;
+                if (position < window.innerHeight - 100) {
+                    content.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
